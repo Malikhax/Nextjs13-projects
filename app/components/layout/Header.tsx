@@ -1,8 +1,10 @@
 "use client"
 import Wrapper from "../shared/Wrapper";
-import {AiOutlineClose,AiOutlineMenu} from 'react-icons/ai'
 import { useState } from "react";
 import Link from "next/link";
+import menuOpenImg from "../../assets/images/menuopen.jpg"
+import menuCloseImg from "../../assets/images/close.png"
+import Image from "next/image";
 
 const Header = ()=>{
     const [nav,setNav] = useState(true)
@@ -28,7 +30,7 @@ const Header = ()=>{
                     </div>
                     <div onClick={handleNav} className="relative md:hidden">
                         {
-                            !nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />
+                            !nav ? <><Image src={menuCloseImg} alt="menu" width={25}/> </> : <><Image src={menuOpenImg} alt="menu" width={20}/> </>
                         }
                     </div>
                 </div>

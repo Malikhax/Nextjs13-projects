@@ -2,7 +2,6 @@
 import Image from "next/image"
 import Button from "../shared/Button"
 import Wrapper from "../shared/Wrapper"
-import FImag from "../../../public/introhero.jpg"
 import Link from "next/link"
 import PortfolioBox from "../shared/PortfolioBox"
 import { useState } from "react"
